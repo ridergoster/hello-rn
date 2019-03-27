@@ -14,35 +14,35 @@ const instructions = Platform.select({
     'Shake or press menu button for dev menu',
 })
 
-export default class HomeScreen extends Component {
+export default class DetailsScreen extends Component {
 
   back = () => {
     this.props.navigation.goBack()
   }
 
   navigate = () => {
-    this.props.navigation.navigate('Details')
+    this.props.navigation.navigate("Home")
   }
 
   push = () => {
-    this.props.navigation.push('Details')
+    this.props.navigation.push("Home")
   }
 
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to HOME</Text>
+        <Text style={styles.welcome}>Welcome to DETAILS</Text>
         <Text style={styles.instructions}>{instructions}</Text>
         <Button
           title="Go back"
           onPress={this.back}
         />
         <Button
-          title="Navigate Details"
+          title="Navigate Home"
           onPress={this.navigate}
         />
         <Button
-          title="Push Details"
+          title="Push Home"
           onPress={this.push}
         />
       </View>
