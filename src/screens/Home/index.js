@@ -34,6 +34,10 @@ export default class HomeScreen extends Component {
     })
   }
 
+  gotoMap = () => {
+    this.props.navigation.push('Map')
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -54,6 +58,10 @@ export default class HomeScreen extends Component {
         <Button
           title="Go to Cat"
           onPress={this.gotoCat}
+        />
+        <Button
+          title="Go to MAP"
+          onPress={this.gotoMap}
         />
       </View>
     );

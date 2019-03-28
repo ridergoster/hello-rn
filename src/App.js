@@ -9,6 +9,7 @@ import {
 import HomeScreen from './screens/Home'
 import DetailsScreen from './screens/Details'
 import CatScreen from './screens/Cat'
+import MapScreen from './screens/Map'
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -19,6 +20,9 @@ const AppNavigator = createStackNavigator({
   },
   Cat: {
     screen: CatScreen
+  },
+  Map: {
+    screen: MapScreen
   }
 }, {
   initialRouteName: "Home",
