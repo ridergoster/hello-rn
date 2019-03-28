@@ -4,6 +4,7 @@ import { createStackNavigator, createAppContainer } from "react-navigation"
 
 import HomeScreen from './screens/Home'
 import DetailsScreen from './screens/Details'
+import CatScreen from './screens/Cat'
 
 const AppNavigator = createStackNavigator({
   Home: {
@@ -11,6 +12,9 @@ const AppNavigator = createStackNavigator({
   },
   Details: {
     screen: DetailsScreen
+  },
+  Cat: {
+    screen: CatScreen
   }
 }, {
   initialRouteName: "Home",

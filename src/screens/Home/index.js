@@ -28,6 +28,10 @@ export default class HomeScreen extends Component {
     this.props.navigation.push('Details')
   }
 
+  gotoCat = () => {
+    this.props.navigation.navigate('Cat')
+  }
+
   render() {
     return (
       <View style={styles.container}>
@@ -44,6 +48,10 @@ export default class HomeScreen extends Component {
         <Button
           title="Push Details"
           onPress={this.push}
+        />
+        <Button
+          title="Go to Cat"
+          onPress={this.gotoCat}
         />
       </View>
     );
