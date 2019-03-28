@@ -29,7 +29,9 @@ export default class HomeScreen extends Component {
   }
 
   gotoCat = () => {
-    this.props.navigation.navigate('Cat')
+    this.props.navigation.navigate('Cat', {
+      title: 'Cat From Home'
+    })
   }
 
   render() {

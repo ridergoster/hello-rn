@@ -10,6 +10,12 @@ import CatImage from '../../components/CatImage'
 
 export default class CatScreen extends Component {
 
+  static navigationOptions = ({ navigation }) => {
+    return {
+      title: navigation.getParam('title', 'Cat View'),
+    }
+  }
+
   state = {
     url: null,
     loading: false,
